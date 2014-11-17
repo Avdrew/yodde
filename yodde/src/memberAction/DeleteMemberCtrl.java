@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Component
 @Controller
 public class DeleteMemberCtrl {
-	@Autowired //해당 변수타입과 일치하는 빈을 찾아서 주입
+	//@Autowired //해당 변수타입과 일치하는 빈을 찾아서 주입
 
 	@RequestMapping(value = "/deleteMember.do", method=RequestMethod.GET)
 	public ModelAndView delete(HttpServletRequest request,

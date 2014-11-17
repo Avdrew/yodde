@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Component
 @Controller
 public class DeleteOwnerCtrl {
-	@Autowired //해당 변수타입과 일치하는 빈을 찾아서 주입
+	//@Autowired //해당 변수타입과 일치하는 빈을 찾아서 주입
 
 
 	@RequestMapping(value = "/deleteOwner", method=RequestMethod.GET)

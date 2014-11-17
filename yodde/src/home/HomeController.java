@@ -26,4 +26,22 @@ public class HomeController {
 		return mav;
 	}
 	
+	@RequestMapping(value = "/searchStore.do", method = RequestMethod.GET)
+	public ModelAndView searchStore(HttpServletRequest request,
+			HttpServletResponse response) throws Exception {		
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/search/test.jsp");
+		return mav;
+	}
+	
+	@RequestMapping(value = "/proxy.do", method = RequestMethod.GET)
+	public ModelAndView proxy(HttpServletRequest request,
+			HttpServletResponse response) throws Exception {		
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/store/api_proxy.jsp");
+		return mav;
+	}
+	
 }
